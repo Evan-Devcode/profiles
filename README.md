@@ -40,23 +40,30 @@
 
 1. **准备工作**
    ```bash
-   # 下载并解压 Xray 安装包到 ~/Xray 目录
+   下载并解压 Xray 安装包到 ~/Xray 目录
 
 2. **设置脚本权限**
    ```bash
    chmod +x install_xray.sh
 
-2. **运行安装脚本**
+3. **运行安装脚本**
    ```bash
-./install_xray.sh
+   ./install_xray.sh
 
-2. **配置节点信息**
-   ```bash
-   chmod +x install_xray.sh
+4\. **配置节点信息**
+   - 将节点信息写入 config.json 文件
+   - 配置文件位置：/usr/local/etc/xray/config.json
 
-2. **配置全局代理**
+5\. **配置全局代理**
+
+   在 `~/.profile` 中添加：
    ```bash
-   chmod +x install_xray.sh
+   # SOCKS5 代理配置
+   export all_proxy="socks5://127.0.0.1:1080"
+   
+   # HTTP/HTTPS 代理配置
+   export http_proxy="http://127.0.0.1:8080"
+   export https_proxy="http://127.0.0.1:8080"
 
 
 

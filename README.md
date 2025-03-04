@@ -70,6 +70,15 @@
    source ~/.profile
 
 
+### 开发工具安装
+
+1\. **设置脚本权限**
+   ```bash
+   chmod +x install_package.sh
+
+2\. **运行安装脚本**
+   ```bash
+  ./install_package.sh
 
 
 

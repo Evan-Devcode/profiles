@@ -75,7 +75,7 @@
 
 6. **应用配置并测试代理**
    ```bash
-   source ~/.profile
+   source ~/.bashrc
    systemctl restart xray
    
    curl -I www.google.com

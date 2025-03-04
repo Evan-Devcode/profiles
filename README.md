@@ -41,7 +41,9 @@
 1. **下载并解压 Xray 安装包到 ~/Xray 目录**
    ```bash
    sftp root@vps_ip地址
+   
    输入密码
+   
    put C:\Users\Administrator\Downloads\Xray-linux-64.zip  /root/
    unzip -d ./Xray Xray-linux-64.zip  
 

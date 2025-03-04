@@ -62,7 +62,7 @@
 
 5. **配置全局代理**
 
-   在 `~/.bashrc或~/.zshrc` 中添加：
+   在 `~/.bashrc` 中添加：
    ```bash
    code ~/.bashrc
    
@@ -104,11 +104,19 @@
    ```bash
    code ~/.zshrc
 
-2. **应用配置**
+2. **为 zsh 设置代理**
+   ```bash
+   # SOCKS5 代理配置
+   export all_proxy="socks5://127.0.0.1:1080"
+   
+   # HTTP/HTTPS 代理配置
+   export http_proxy="http://127.0.0.1:8080"
+   export https_proxy="http://127.0.0.1:8080"
+
+3. **开启 zsh 并应用配置**
    ```bash
    source ~/.zshrc
-
-
+   
 ## ⚠️ 注意事项
 
 - 运行 `install_xray.sh` 需要 root 权限

@@ -68,8 +68,7 @@
 6. **应用配置**
    ```bash
    source ~/.profile
-
-
+   
 ### 开发工具安装
 
 1. **设置脚本权限**
@@ -78,7 +77,7 @@
 
 2. **运行安装脚本**
    ```bash
-  ./install_package.sh
+   ./install_package.sh
 
 3. **验证安装**
    ```bash
@@ -87,6 +86,15 @@
    git --version
    vim --version
 
+### zsh环境配置
+
+1. **部署配置文件**
+   ```bash
+   将配置文件保存到本地
+
+2. **应用配置**
+   ```bash
+   source ~/.zshrc
 
 
 

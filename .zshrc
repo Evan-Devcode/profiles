@@ -1,4 +1,3 @@
-
 # ===== 基础设置 =====
 # 编辑器
 export EDITOR='vim'
@@ -35,43 +34,37 @@ if [[ -f "${ZINIT_HOME}/zinit.zsh" ]]; then
 
   # 立即加载的核心插件
   # powerlevel10k 主题
-  zinit ice depth=1
+  zinit ice depth=1 time-limit=15
   zinit light romkatv/powerlevel10k
   
   # zsh-vi-mode: vi 模式需要优先加载
-  zinit ice depth=1
+  zinit ice depth=1 time-limit=15
   zinit light jeffreytse/zsh-vi-mode
   
   # 延迟加载的插件
   # zsh-completions: 补全定义
-  zinit ice wait lucid
+  zinit ice wait lucid time-limit=15
   zinit light zsh-users/zsh-completions
   
   # fzf-tab: fzf 补全增强
-  zinit ice wait lucid
+  zinit ice wait lucid time-limit=15
   zinit light Aloxaf/fzf-tab
   
   # zsh-autosuggestions: 自动补全建议
-  zinit ice wait lucid atload'!_zsh_autosuggest_start'
+  zinit ice wait lucid atload'!_zsh_autosuggest_start' time-limit=15
   zinit light zsh-users/zsh-autosuggestions
   
   # zsh-history-substring-search: 历史搜索
-  zinit ice wait lucid
+  zinit ice wait lucid time-limit=15
   zinit light zsh-users/zsh-history-substring-search
   
   # fast-syntax-highlighting: 语法高亮（最后加载）
-  zinit ice wait lucid atinit'zpcompinit; zpcdreplay'
+  zinit ice wait lucid atinit'zpcompinit; zpcdreplay' time-limit=15
   zinit light zdharma-continuum/fast-syntax-highlighting
 else
   echo "\033[33m警告: zinit 未安装，部分功能不可用\033[0m"
   autoload -Uz compinit && compinit
 fi
-
-
-
-
-
-
 
 # ===== Vim 模式设置 =====
 bindkey -v

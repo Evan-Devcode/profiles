@@ -38,15 +38,15 @@
 
 ### Xray 代理配置
 
-1. **准备工作**
+1\. **准备工作**
    ```bash
    下载并解压 Xray 安装包到 ~/Xray 目录
 
-2. **设置脚本权限**
+2\. **设置脚本权限**
    ```bash
    chmod +x install_xray.sh
 
-3. **运行安装脚本**
+3\. **运行安装脚本**
    ```bash
    ./install_xray.sh
 
@@ -65,6 +65,9 @@
    export http_proxy="http://127.0.0.1:8080"
    export https_proxy="http://127.0.0.1:8080"
 
+6\. **应用配置**
+   ```bash
+   source ~/.profile
 
 
 

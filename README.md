@@ -47,8 +47,9 @@
    put C:\Users\Administrator\Downloads\Xray-linux-64.zip  /root/
    unzip -d ./Xray Xray-linux-64.zip  
 
-2. **设置脚本权限**
+2. **将脚本保存到本地并设置权限**
    ```bash
+   code install_xray.sh
    chmod +x install_xray.sh
 
 3. **运行安装脚本**
@@ -75,6 +76,7 @@
 6. **应用配置并测试代理**
    ```bash
    source ~/.profile
+   systemctl restart xray
    
    curl -I www.google.com
   

@@ -38,9 +38,12 @@
 
 ### Xray 代理配置
 
-1. **准备工作**
+1. **下载并解压 Xray 安装包到 ~/Xray 目录**
    ```bash
-   下载并解压 Xray 安装包到 ~/Xray 目录
+   sftp root@vps_ip地址
+   输入密码
+   put C:\Users\Administrator\Downloads\Xray-linux-64.zip  /root/
+   unzip -d ./Xray Xray-linux-64.zip  
 
 2. **设置脚本权限**
    ```bash
@@ -52,12 +55,13 @@
 
 4. **配置节点信息**
    - 将节点信息写入 config.json 文件
-   - 配置文件位置：/usr/local/etc/xray/config.json
+   - code /usr/local/etc/xray/config.json
 
 5. **配置全局代理**
 
    在 `~/.profile` 中添加：
    ```bash
+   code ~/.profile
    # SOCKS5 代理配置
    export all_proxy="socks5://127.0.0.1:1080"
    
@@ -65,19 +69,22 @@
    export http_proxy="http://127.0.0.1:8080"
    export https_proxy="http://127.0.0.1:8080"
 
-6. **应用配置**
+6. **应用配置并测试代理**
    ```bash
    source ~/.profile
+   curl -I www.google.com
+
    
 ### 开发工具安装
 
-1. **设置脚本权限**
+1. **将脚本保存到本地并设置权限**
    ```bash
-   chmod +x install_package.sh
+   code install_packages.sh
+   chmod +x install_packages.sh
 
 2. **运行安装脚本**
    ```bash
-   ./install_package.sh
+   ./install_packages.sh
 
 3. **验证安装**
    ```bash
@@ -86,11 +93,11 @@
    git --version
    vim --version
 
-### zsh环境配置
+### Zsh 环境配置
 
-1. **部署配置文件**
+1. **将配置文件保存到本地**
    ```bash
-   将配置文件保存到本地
+   code ~/.zshrc
 
 2. **应用配置**
    ```bash

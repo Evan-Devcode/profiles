@@ -62,9 +62,9 @@
 
 5. **配置全局代理**
 
-   在 `~/.profile` 中添加：
+   在 `~/.bashrc或~/.zshrc` 中添加：
    ```bash
-   code ~/.profile
+   code ~/.bashrc
    
    # SOCKS5 代理配置
    export all_proxy="socks5://127.0.0.1:1080"

@@ -64,6 +64,7 @@
    在 `~/.profile` 中添加：
    ```bash
    code ~/.profile
+   
    # SOCKS5 代理配置
    export all_proxy="socks5://127.0.0.1:1080"
    

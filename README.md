@@ -75,9 +75,9 @@
 6. **应用配置并测试代理**
    ```bash
    source ~/.profile
-   curl -I www.google.com
-
    
+   curl -I www.google.com
+  
 ### 开发工具安装
 
 1. **将脚本保存到本地并设置权限**

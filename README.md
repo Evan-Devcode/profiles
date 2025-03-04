@@ -1,4 +1,4 @@
-# 开发环境配置工具集
+# Linux/MacOS 开发环境配置工具集
 
 一套用于快速配置 Linux/MacOS 开发环境的脚本集合，包含代理工具、常用开发工具的安装和 Shell 环境配置。
 
@@ -117,18 +117,26 @@
    - 检查网络连接
    - 尝试重新加载 zsh 配置
 
+## 🤝 贡献指南
 
+欢迎提交 Issue 和 Pull Request！在提交之前，请：
 
+- 确保代码符合项目规范
+- 添加必要的测试和文档
+- 更新 README 相关内容
 
+## 📄 许可证
 
+MIT License
 
+Copyright (c) 2024
 
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
 
-
-
-
-
-
-
-
-   
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.

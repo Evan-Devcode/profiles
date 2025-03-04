@@ -72,15 +72,20 @@
 
 ### 开发工具安装
 
-1\. **设置脚本权限**
+1. **设置脚本权限**
    ```bash
    chmod +x install_package.sh
 
-2\. **运行安装脚本**
+2. **运行安装脚本**
    ```bash
   ./install_package.sh
 
-
+3. **验证安装**
+   ```bash
+   # 检查各个工具是否正确安装
+   zsh --version
+   git --version
+   vim --version
 
 
 

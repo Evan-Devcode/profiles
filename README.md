@@ -41,5 +41,44 @@
 1. **准备工作**
    ```bash
    # 下载并解压 Xray 安装包到 ~/Xray 目录
-   mkdir -p ~/Xray
-   # 将下载的 Xray 安装包解压到此目录
+
+2. **设置脚本权限**
+   ```bash
+   chmod +x install_xray.sh
+
+2. **运行安装脚本**
+   ```bash
+./install_xray.sh
+
+2. **配置节点信息**
+   ```bash
+   chmod +x install_xray.sh
+
+2. **配置全局代理**
+   ```bash
+   chmod +x install_xray.sh
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
